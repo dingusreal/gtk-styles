@@ -25,7 +25,7 @@ button {
 }
 button:hover {
     
-    filter: brightness() saturate(2) sepia(0.5) contrast(2);
+    filter: brightness(1) saturate(2) sepia(0.5) contrast(2);
 }
 button:active {
     color: yellow;

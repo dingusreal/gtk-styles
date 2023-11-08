@@ -1,59 +1,64 @@
 .background.csd {
-    border-radius: 2%;
+    border-radius: 0;
     color: yellow;
     font-family: Comic Sans MS;
-    box-shadow: 4px 4px 8px 4px rgba(0,0,0,1);
+    border: 12px #003f7f inset;
+    box-shadow: 8px 8px 8px 4px rgba(0,0,0,0.9);
     filter: contrast(3);
     background: linear-gradient(to bottom right, #00aa00, magenta);
 }
+
 .background.csd.maximized, .background.csd.tiled, .background.csd.fullscreen {
     border-radius: 0;
 }
 
 .toolbar, headerbar {
-    background: magenta;
+    background: linear-gradient(to top left, #00aa00, magenta);
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
 }
 button {
     color: yellow;
     padding: 2px;
-    background: linear-gradient(to bottom right, green, magenta);
+    margin: 4px;
+    background: linear-gradient(to bottom right, #00aa00, magenta);
     font-family: Comic Sans MS;
     border-radius: 25%;
     border: 3px yellow solid;
-    box-shadow: 4px 4px 2px rgba(0,0,0,1);
+    box-shadow: 4px 4px 2px rgba(0,0,0,.75);
+    transition: none;
     outline: none;
 }
 button:hover {
     
-    filter: brightness(1) saturate(2) sepia(0.5) contrast(2);
+    filter: brightness(1) saturate(2) contrast(2);
 }
 button:active {
     color: yellow;
     transform: scale(0.9);
-    background: linear-gradient(to bottom right, green, magenta);
+    background: linear-gradient(to bottom right, green, indigo);
     font-family: Comic Sans MS;
     border-radius: 25%;
     border: 3px yellow solid;
-    box-shadow: 2px 2px 2px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.75);
     
 }
 
 .card {
-    background: yellow;
+    background: linear-gradient(to bottom right,#ffff99,yellow);
     color: black;
     border-radius: 16px 0;
     border: 3px black solid;
     outline: none;
-    box-shadow: 4px 4px 0px rgba(0,0,0,.5);
+    box-shadow: 4px 4px 0px rgba(0,0,0,.75);
 }
 dropdown > popover.menu.background > contents {
-  background-color: blue;
+  background: linear-gradient(to top right,cyan,blue);
   color: yellow;
   font-size: 18pt;
   font-weight: 600;
   border-radius: 4px;
   font-family: monospace;
-  box-shadow: 8px 8px 1px 3px rgba(0,0,0,1);
+  box-shadow: 8px 8px 1px 3px rgba(0,0,0,.75);
   border: 2px yellow solid;
 }
 .heading {
@@ -63,13 +68,16 @@ font-weight: 600;
 
 }
 list {
-  background-color: #00ff00;
+  background: linear-gradient(to bottom right,#99ff99,#00ff00);
   color: blue;
   font-size: 18pt;
   font-weight: 600;
-  border-radius: 35px;
+  border-radius: 25px;
   font-family: Comic Sans MS;
   box-shadow: 3px 3px 1px 0px rgba(0,0,0,1);
   border: 3px red solid;
   transform: skewX(-5deg);
+}
+list:hover {
+  
 }

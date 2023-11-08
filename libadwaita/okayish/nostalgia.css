@@ -1,0 +1,77 @@
+* {
+font-family: sans-serif;
+font-size: 11pt;
+}
+
+button {
+border-radius: 0;
+border: 2px outset #909090;
+background-color: #dddddd;
+box-shadow: 0 0 0 1px black;
+color: black;
+transition: none;
+outline: none;
+}
+button:active {
+
+border-radius: 0;
+border: 2px inset #808080;
+background-color: #bbbbbb;
+box-shadow: 0 0 0 1px black;
+color: black;
+}
+.csd {
+border-radius: 0;
+box-shadow: 0 0 0 1px black;
+border-radius: 0;
+border: 2px outset #aaaaaa;
+background-color: #dddddd;
+color: black;
+transition: none;
+outline: none;
+}
+headerbar {
+border-radius: 0;
+box-shadow: 0 1px 0 0 black;
+border-radius: 0;
+border: 2px outset #aaaaaa;
+background-color: #dddddd;
+color: black;
+transition: none;
+outline: none;
+}
+.card {
+border-radius: 0;
+box-shadow: 0 0 0 1px black;
+border-radius: 0;
+border: 1px inset #aaaa60;
+background-color: #fffff0;
+color: black;
+transition: none;
+outline: none;
+}
+.title {
+font-size: 12pt;
+}
+list {
+border-radius: 0;
+box-shadow: 0 0 0 1px black;
+border-radius: 0;
+border: 2px outset #aaaaaa;
+background-color: #dddddd;
+color: black;
+transition: none;
+outline: none;
+}
+dropdown > popover.menu.background > contents {
+border-radius: 0;
+box-shadow: 0 0 0 1px black;
+border-radius: 0;
+border: 2px outset #aaaaaa;
+background-color: #dddddd;
+color: black;
+transition: none;
+outline: none;
+padding: 0;
+margin: 0;
+}

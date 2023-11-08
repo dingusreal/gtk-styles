@@ -1,21 +1,38 @@
 button {
-transition: transform 10s;
+  transition: transform 10s;
 }
 button:hover {
- transform: rotate(720deg);
+  transform: rotate(720deg);
  
 }
 list {
-transition: transform 10s;
+  transition: transform 10s;
 }
 list:hover {
- transform: rotate(720deg);
+  transform: rotate(720deg);
  
 }
 .card {
-transition: transform 10s;
+  transition: transform 10s;
 }
 .card:hover {
- transform: rotate(720deg);
- 
+  transform: rotate(720deg);
+}
+popover.menu.background > contents {
+  transition: transform 10s;
+}
+popover:hover.menu.background > contents {
+  transform: rotate(720deg);
+}
+.heading {
+  transition: transform 10s;
+}
+.heading:hover {
+  transform: rotate(720deg);
+}
+.label {
+  transition: transform 10s;
+}
+.label:hover {
+  transform: rotate(720deg);
 }

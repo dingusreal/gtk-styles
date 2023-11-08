@@ -1,0 +1,53 @@
+.background.csd {
+    border-radius: 2px;
+    color: yellow;
+    font-family: Comic Sans MS;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,1);
+    background: linear-gradient(to bottom right, green, magenta);
+}
+.background.csd.maximized, .background.csd.tiled, .background.csd.fullscreen {
+    border-radius: 0;
+}
+
+.toolbar, headerbar {
+    background: magenta;
+}
+button {
+    color: yellow;
+    padding: 2px;
+    background: linear-gradient(to bottom right, green, magenta);
+    font-family: Comic Sans MS;
+    border-radius: 25%;
+    border: 3px yellow solid;
+    box-shadow: 4px 4px 2px rgba(0,0,0,1);
+    outline: none;
+}
+button:active {
+    color: yellow;
+    transform: scale(0.9);
+    background: linear-gradient(to bottom right, green, magenta);
+    font-family: Comic Sans MS;
+    border-radius: 25%;
+    border: 3px yellow solid;
+    box-shadow: 2px 2px 2px rgba(0,0,0,1);
+    
+}
+
+.card {
+    background: yellow;
+    color: black;
+    border-radius: 16px 0;
+    border: 3px black solid;
+    outline: none;
+    box-shadow: 4px 4px 0px rgba(0,0,0,.5);
+}
+dropdown > popover.menu.background > contents {
+  background-color: blue;
+  color: yellow;
+  font-size: 18pt;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family: monospace;
+  box-shadow: 8px 8px 1px 3px rgba(0,0,0,1);
+  border: 2px yellow solid;
+}

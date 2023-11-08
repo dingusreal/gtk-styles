@@ -1,0 +1,21 @@
+button {
+transition: transform 10s;
+}
+button:hover {
+ transform: rotate(720deg);
+ 
+}
+list {
+transition: transform 10s;
+}
+list:hover {
+ transform: rotate(720deg);
+ 
+}
+.card {
+transition: transform 10s;
+}
+.card:hover {
+ transform: rotate(720deg);
+ 
+}

@@ -1,0 +1,130 @@
+* {
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+window {
+  outline: 8px red solid;
+  outline-offset: 0px;
+  background-color: red;
+  color: white;
+  opacity: 1;
+}
+window {
+  border: 2px black solid;
+  box-shadow: 0 0 0 10px black, 2px 2px 0 10px black;
+}
+headerbar {
+  background-color: black;
+  color: white;
+  opacity: 1;
+  border-bottom: 2px black solid;
+}
+headerbar:backdrop {
+  background-color: red;
+  color: white;
+  border-bottom: 2px black solid;
+}
+button {
+  background: rgb(191,191,191);
+  color: black;
+  border: 2px grey outset;
+  outline: 2px black solid;
+  outline-offset: 0px;
+  opacity: 1;
+}
+button:hover:active, button.toggle:checked {
+  background: rgb(127,127,127);
+  color: black;
+  border: 2px rgb(96,96,96) inset;
+  outline: 2px black solid;
+  outline-offset: 0px;
+}
+button > image {
+  background: transparent;
+}
+.card, list {
+  background-color: yellow;
+  border: 2px black solid;
+  outline: none;
+}
+.card:backdrop, list:backdrop {
+  color:white;
+  background-color: red;
+  border: 2px black solid;
+  outline: none;
+}
+row {
+  padding: 4px 12px;
+  outline: none;
+  border-color: black;
+}
+
+button label {
+  padding: 0;
+  margin: -8px 0;
+}
+
+selection, *:selected {
+  background-color: black;
+  color: white;
+}
+popover.background > contents {
+  border: 2px black solid;
+  padding: 0;
+}
+popover.background {
+  padding: 0;
+  margin: 0;
+}
+popover {
+  margin: 0;
+  padding: 0;
+}
+popover.background > arrow {
+  border: 2px black solid;
+}
+
+switch, switch slider  {
+  border: 2px black solid;
+  color: black;
+  opacity: 1;
+  background: grey;
+  border-radius: 9999px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+switch slider {
+  background: white;
+}
+switch:checked {
+  background-color: red;
+}
+label {
+  opacity: 1;
+}
+
+scrollbar, scrollbar slider {
+  padding: 0;
+  margin: 0;
+  background: grey;
+  outline-color: transparent;
+  border: 2px black solid;
+  color: transparent;
+  opacity: 1;
+  transition: none;
+  min-width: 8px;
+}
+scrollbar slider {
+  background: rgb(191,191,191);
+  color: black;
+  border: 2px grey outset;
+  outline: 2px black solid;
+  outline-offset: 0px;
+  opacity: 1;
+}
+
+scrollbar trough {
+  min-width: 0;
+  margin: 0px;
+}

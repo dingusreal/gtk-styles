@@ -1,0 +1,38 @@
+@keyframes ripple_effect {
+  0% {
+    background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0.12) 0%, transparent 0%), image(alpha(currentColor, 0));
+  }
+  66% {
+    background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0.12) 100%, transparent 0%), image(alpha(currentColor, 0.12));
+  }
+  100% {
+    background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0.12) 100%, transparent 0%), image(alpha(currentColor, 0));
+  }
+}a
+
+button.flat {
+  background-color: transparent;
+}
+
+button:not(.close), modelbutton, menuitem {
+  background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0) 100%, transparent 0%), image(alpha(currentColor, 0)); box-shadow: none; transition-timing-function: cubic-bezier(0, 0, 0.2, 1); transition-duration: 0.2s;
+}
+button:not(.close):hover, modelbutton:hover, menuitem:hover {
+  background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0) 100%, transparent 0%),  image(alpha(currentColor, 0.12)); box-shadow: none;
+}
+button:not(.close):active, modelbutton:active, menuitem:active {
+  box-shadow: none; transition: all 0.2s cubic-bezier(0, 0, 0.2, 1), background-image 0s; animation: ripple_effect 0.4s cubic-bezier(0,  0, 0.2, 1) forwards;
+
+}
+
+.close image {
+  border-radius: 999px;
+  background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0) 100%, transparent 0%), image(alpha(currentColor, 0)); box-shadow: none; transition-timing-function: cubic-bezier(0, 0, 0.2, 1); transition-duration: 0.2s;
+}
+.close:hover image {
+  background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0) 100%, transparent 0%),  image(alpha(currentColor, 0.12)); box-shadow: none;
+}
+.close:active image {
+  box-shadow: none; transition: all 0.2s cubic-bezier(0, 0, 0.2, 1), background-image 0s; animation: ripple_effect 0.4s cubic-bezier(0,  0, 0.2, 1) forwards;
+
+}

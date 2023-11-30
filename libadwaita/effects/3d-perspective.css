@@ -1,0 +1,10 @@
+
+.card, list {
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 12px 32px 64px -0px rgba(0,0,0,0.25);
+  transform: perspective(1024px) rotateX(45deg) rotateY(0deg) rotateZ(15deg);
+}
+.card:hover, list:hover {
+  box-shadow: 12px 32px 128px -16px rgba(0,0,0,0.25);
+  transform: perspective(1024px) rotateX(10deg) rotateY(0deg) rotateZ(0deg) translateZ(16px);
+}
